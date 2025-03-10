@@ -7,3 +7,30 @@
     height: 125px;
     width: 205px;
 }
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.product-img {
+    width: 100%;  
+    height: 300px; 
+    object-fit: contain; 
+    padding: 5px;
+    background-color: #f8f9fa;
+}

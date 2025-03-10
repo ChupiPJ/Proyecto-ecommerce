@@ -15,19 +15,109 @@
         <h2 class="text-center mb-4">Formulario de Contacto</h2>
 
         <form class="p-4 border rounded shadow">
-            <div class="mb-3">
-                <label class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+            <!-- Nombres y Apellidos -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Primer Nombre <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu primer nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Segundo Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu segundo nombre">
+                </div>
             </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Primer Apellido <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu primer apellido" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Segundo Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu segundo apellido">
+                </div>
+            </div>
+
+            <!-- Documento de Identidad -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Tipo de Documento <span class="text-danger">*</span></label>
+                    <select class="form-select" required>
+                        <option value="">Seleccione...</option>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Número de Documento <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu número de documento" required>
+                </div>
+            </div>
+
+            <!-- Fecha de Nacimiento -->
+            <div class="mb-3">
+                <label class="form-label">Fecha de Nacimiento <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" required>
+            </div>
+
+            <!-- Correo y Contraseña -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Contraseña <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required>
+                </div>
+            </div>
+
+            <!-- Sistemas Utilizados -->
+            <div class="mb-3">
+                <label class="form-label">Sistemas que usas:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Windows">
+                    <label class="form-check-label">Windows</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="MacOS">
+                    <label class="form-check-label">MacOS</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Linux">
+                    <label class="form-check-label">Linux</label>
+                </div>
+            </div>
+
+            <!-- Forma de Contacto -->
+            <div class="mb-3">
+                <label class="form-label">Forma de Contacto <span class="text-danger">*</span></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" value="Llamada" required>
+                    <label class="form-check-label">Llamada</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" value="Correo" required>
+                    <label class="form-check-label">Correo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" value="WhatsApp" required>
+                    <label class="form-check-label">WhatsApp</label>
+                </div>
+            </div>
+
+            <!-- Mensaje -->
             <div class="mb-3">
                 <label class="form-label">Mensaje</label>
                 <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
             </div>
 
+            <!-- Botón de Envío -->
             <button type="submit" class="btn btn-primary w-100">Enviar</button>
         </form>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>&copy; 2025 Mi Ecommerce. Todos los derechos reservados.</p>
     </footer>
@@ -42,5 +132,8 @@
                 .catch(error => console.error("Error al cargar el navbar:", error));
         });
     </script>
+    <!-- Botón para subir arriba -->
+    <button id="scrollToTop" class="btn btn-primary">⬆️</button>
+    <script src="resources/js/scripts.js"></script>
 </body>
 </html>
