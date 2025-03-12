@@ -34,3 +34,57 @@
     padding: 5px;
     background-color: #f8f9fa;
 }
+
+.dark-mode header.bg-primary {
+    background-color: #1a1a2e !important; /* Un azul mucho más oscuro */
+}
+
+.dark-mode #boton-enviar{
+    background-color: #007bff;
+    color: white;
+}
+
+#boton-enviar{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dark-mode #servicios{
+    background-color: #000000;
+    color: white;
+}
+
+.dark-mode #tabla-gris{
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark-mode #tabla-blanca{
+    background-color: #505050;
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode table,
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #474747;
+}
+
+.dark-mode .disponible {
+    color: #2ecc71;
+}
+
+.dark-mode .no-disponible {
+    color: #791818;
+}
+
+.dark-mode .bajo-disponibilidad {
+    color: #f39c12;
+}
